@@ -1,0 +1,7 @@
+Name: Yuqian Chen(Sec 002) && Yuanchen Liu(Sec 002)
+CS Login: yuqian 			  yuanchen
+
+What I did in Projects
+The Unix Shell:
+	We use a while loop to run myshell, print "mysh>" and get user's commands. Then we check and deal with four special user command cases(i.e. "blank line", "exit", "cd" and "pwd"). After that, we use fork() to create a child process. 
+	In the child process, we execute user's argument. First of all, we check if there are special features(i.e. ">", ">>" and "|"). If command has ">" or ">>", we create a file descripors and use dup2() to setting STDOUT to refer to the created file. Then, if "|" does not exist, it just execute arguments and return to myshell. If "|" exist, we create a pair of file descriptors and use pipe() to connect them, then we use fork() to create a new child process to execute the arguments before "|", and return to parent process to execute arguments after "|", then it return to myshell and parse new commands.
