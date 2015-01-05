@@ -1,0 +1,14 @@
+Name: Yuqian Chen
+CSL-ID:yuqian
+Name: Yuanchen Liu
+CSL-ID:yuqanchen
+
+Linux-Implementation Details: 
+	In this project, we created a distributed file server using UDP as a underlying layer. We implemented
+	the mfs.c file. It has seven defined funcitons in it. We use these seven functions as commands to 
+	connect to remote sever and made it as a shared library. We also implemented the server function. In
+	the server funciton, we first opened the server file image, and get the proper infomations(superblock, 
+	inodes, bitmaps). We then checked each command and implemented proper the command function. 
+
+XV6-Implementation Details:
+	We wish to drop this one(p5b). 

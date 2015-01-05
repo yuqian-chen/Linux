@@ -1,0 +1,13 @@
+
+#include <stdio.h>
+#include "mfs.h"
+
+int main(int argc, char *argv[])
+{
+
+
+	printf("I am the client!\n");
+
+	
+	return 0;
+}
